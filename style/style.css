@@ -1,0 +1,69 @@
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #C2C2C2;
+  background-image: url("../images/floating-dream.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+#container {
+  height: 100%;
+  margin: 0 auto;
+  min-height: 100%;
+  position: relative;
+  width: 651px;
+}
+
+#content {
+  position: absolute;
+  top: 50%;
+  height: 100px;
+  margin-top: -200px;
+}
+
+#name {
+  color: #FFFFFF;
+  font-family: Hack, monospace;
+  font-size: 72px;
+  line-height: 96px;
+}
+
+.social-link {
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  display: block;
+  height: 70px;
+  margin: 0 45px;
+  width: 70px;
+}
+
+#icons {
+  margin: 0 auto;
+  width: 390px;
+}
+
+#github {
+  background-image: url("../images/github.png");
+  float: left;
+  margin-left: 0;
+}
+
+#mail {
+  background-image: url("../images/mail.png");
+  float: left;
+}
+
+#linkedin {
+  background-image: url("../images/linkedin.png");
+  float: left;
+  margin-right: 0;
+}
+
+#linkedin:after {
+  clear: both;
+}
