@@ -20,11 +20,13 @@ body {
   width: 651px;
 }
 
-#content {
-  position: absolute;
-  top: 50%;
-  margin-top: -200px;
-  width: inherit;
+@media all and (orientation: landscape) {
+  #content {
+    position: absolute;
+    top: 50%;
+    margin-top: -200px;
+    width: inherit;
+  }
 }
 
 #name {
@@ -43,6 +45,7 @@ body {
   height: 70px;
   margin: 0 45px;
   width: 70px;
+  float: left;
   visibility: hidden;
   opacity: 0.0;
 }
@@ -55,18 +58,15 @@ body {
 
 #github {
   background-image: url("../images/github.png");
-  float: left;
   margin-left: 0;
 }
 
 #mail {
   background-image: url("../images/mail.png");
-  float: left;
 }
 
 #linkedin {
   background-image: url("../images/linkedin.png");
-  float: left;
   margin-right: 0;
 }
 
@@ -74,22 +74,44 @@ body {
   clear: both;
 }
 
+@media all and (orientation: portrait) {
+  #content {
+    top: 10%;
+  }
+
+  .social-link {
+    clear: both;
+    height: 15vh;
+    margin: 0 auto 5vh;
+    width: 15vh;
+  }
+
+  #icons {
+    margin: 5vh auto 0;
+    width: 15vh;
+  }
+}
+
+/* Typed.js setup */
 .typed-cursor {
     opacity: 1;
     -webkit-animation: blink 1s infinite;
     -moz-animation: blink 1s infinite;
     animation: blink 1s infinite;
 }
+
 @keyframes blink {
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
 }
+
 @-webkit-keyframes blink {
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
 }
+
 @-moz-keyframes blink {
     0% { opacity:1; }
     50% { opacity:0; }
