@@ -82,13 +82,27 @@ body {
   .social-link {
     clear: both;
     height: 15vh;
+    max-height: 210px;
     margin: 0 auto 5vh;
     width: 15vh;
+    max-width: 210px;
   }
 
   #icons {
     margin: 5vh auto 0;
     width: 15vh;
+  }
+}
+
+@media only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-devicepixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+  #github {
+    background-image: url("../images/github@3x.png");
+  }
+  #mail {
+    background-image: url("../images/mail@3x.png");
+  }
+  #linkedin {
+    background-image: url("../images/linkedin@3x.png");
   }
 }
 
