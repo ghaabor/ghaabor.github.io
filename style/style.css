@@ -23,7 +23,6 @@ body {
 #content {
   position: absolute;
   top: 50%;
-  height: 100px;
   margin-top: -200px;
   width: inherit;
 }
@@ -50,6 +49,7 @@ body {
 
 #icons {
   margin: 0 auto;
+  height: 70px;
   width: 390px;
 }
 
