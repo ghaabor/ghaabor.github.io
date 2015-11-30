@@ -33,6 +33,8 @@ body {
   font-family: Hack, monospace;
   font-size: 72px;
   line-height: 96px;
+  visibility: hidden;
+  opacity: 0.0;
 }
 
 .social-link {
@@ -42,6 +44,8 @@ body {
   height: 70px;
   margin: 0 45px;
   width: 70px;
+  visibility: hidden;
+  opacity: 0.0;
 }
 
 #icons {
