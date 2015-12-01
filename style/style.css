@@ -36,6 +36,12 @@ body {
   line-height: 96px;
   visibility: hidden;
   opacity: 0.0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  cursor: default;
 }
 
 .social-link {
